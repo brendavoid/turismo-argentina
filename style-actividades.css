@@ -1,0 +1,315 @@
+/* 
+Fuentes: 
+    Montserrat
+    Open Sans Extreme Bold
+    Playfair Display
+    Poppins
+Paleta principal: 
+    Naranja: #df7a5e
+    Azul oscuro: #3c405b
+    Gris oscuro: #393e41
+    Crema: #f4f1dd
+Paleta secundaria: 
+    Gris medio: #8c8c8d
+    Salmón: #e8b09d
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 30px;
+    background-image: linear-gradient(#e6e6f7, #fff );
+}
+
+/* Navbar */
+.mainbody{
+    width: 100%;
+    height: 100%;
+    position: aboslute;
+}
+
+.container{
+    /* background-color: gray; */
+    width: 100%;
+    padding: 10px 20px 30px 20px;
+}
+
+.container nav{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    /* background-color: aqua; */
+    gap: 50px;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    align-items: center;
+
+}
+
+nav ul{
+    /* background-color: black; */
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 45px;
+}
+
+.navbar li{
+    list-style: none;
+    font-weight: 500;
+    transition: all 0,5s ease-in;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    border: solid 1.5px #47519a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
+}
+
+.navbar li a, .logo a{
+    text-decoration: none;
+    color: #47519a;
+}
+
+.navbar li:hover{
+    cursor: pointer;
+    background-color: #47519a;
+}
+
+.navbar li:hover a{
+    color: #e6e6f7;
+}
+
+
+/* Gridbox */
+.maingrid-box{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.maingrid-box a{
+    color: #fff;
+    font-weight: 700;
+}
+
+.maingrid-box p{
+    color: #fff;
+    font-size: 10px;
+}
+
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(https://viajando365.com/wp-content/uploads/2017/01/chris-biron-99839-unsplash-1100x825.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5em;
+}
+
+.box2{
+    grid-column: 3 / 4;
+    grid-row: 1/ 2;
+    background-image: url(https://radionacional-v3.s3.amazonaws.com/s3fs-public/node/article/field_image/Tango%208.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box3{
+    grid-column: 4 / 6;
+    grid-row: 1/ 4;
+    background-image: url(https://media.traveler.es/photos/613768f03decec3303bab7da/master/pass/158835.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box4{
+    grid-column: 1 / 3;
+    grid-row: 3/ 4;
+    background-image: url(https://okdiario.com/img/2019/08/26/receta-de-asado-argentino.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box5{
+    grid-column: 3 / 4;
+    grid-row: 2/ 4;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/af/Lago_Argentino_-_panoramio.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.maingrid-box div a{
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.box1, .box2, .box3, .box4, .box5{
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+.texto{
+    background-color: rgba(0, 0, 0, 0.33);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+/* 3era página */
+.pagina{
+    padding: 30px 20px;
+    width: 100%
+}
+.card-container{
+    padding: 30px 0px;
+}
+.pagina h3{
+    color: #47519a;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pagina p{
+    text-align: center;
+    margin: 10px 0px;
+    line-height: 1.5;
+}
+
+.card-container{
+    display: flex;       
+    gap: 25px; 
+}
+
+.card{
+    flex-direction: column;
+    width: 40%;
+    box-sizing: border-box;    
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+
+}
+
+.card-texto{
+    padding: 10px 17px;
+    text-align: start;
+    justify-content: start;
+}
+
+.card h4{
+    font-family: 'Poppins', serif;
+    font-size: 1.2rem;
+}
+
+.card p{
+    font-family: 'Open sans', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    text-align: start;
+    color: gray;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+/*           */
+.doscolumnas{
+    display: flex;
+    margin: 0 auto;
+    margin: 30px 0;
+}
+
+.doscolumnas div{
+    margin-top: 30px;
+    width: 50%;
+    line-height: 2;
+}
+
+.div-left{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 30px;
+}
+
+.doscolumnas figure{
+    width: 50%;
+    margin: 1.5%;
+    display: flex;
+    align-items: center;
+}
+
+.doscolumnas img{
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid #47519a;
+    height: 350px;
+    object-fit: cover;
+}
+
+.doscolumnas h4{
+    color: #47519a;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.div-right p{
+    text-align: start;
+}
+
+.div-left p{
+    text-align: end;
+}
+
+.div-right figure{
+    justify-content: end;
+}
+
+.div-left figure{
+    justify-content: start;
+}
+
+/* FOOTER */
+footer{
+    margin: 0;
+    padding: 40px;
+
+}
+footer p{
+    color: #47519a;
+    text-align: center;
+}
